@@ -1,6 +1,6 @@
 FROM java:8
 VOLUME /tmp
 EXPOSE 8080
-ADD http://nexus-pipeline.cloudapps-b488.oslab.opentlc.com/content/repositories/releases/org/mong-ci/main/mong-jar/2.23/mong-jar-2.23.jar app.jar
+ADD http://nexusrepo-nexus.cloudapps-5957.oslab.opentlc.com/content/repositories/releases/org/mong-ci/main/mong-jar/2.234/mong-jar-2.234.jar app.jar
 RUN bash -c 'touch /app.jar'
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
