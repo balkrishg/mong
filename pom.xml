@@ -47,6 +47,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>1.0.1.Final</version>
+                <configuration>
+                    <username>USERNAME</username>
+                    <password>PASSWORD</password>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 
